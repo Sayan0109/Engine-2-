@@ -47,9 +47,11 @@ public class Health : MonoBehaviour, IHealth
         {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            rb.isKinematic = true; // можно заблокировать физику, чтобы объект не двигался
+            rb.isKinematic = true;
         }
 
-        OnDeath?.Invoke();
+        OnDeath?.Invoke();   // вызываем событие
+
+        Destroy(gameObject); // уничтожаем объект
     }
 }

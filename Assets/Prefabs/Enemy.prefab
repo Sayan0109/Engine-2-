@@ -163,9 +163,9 @@ MonoBehaviour:
   speed: 8.51
   rotationSpeed: 23.18
   detectionRange: 100
-  attackRange: 15.89
+  attackRange: 8
   damage: 10
-  attackRate: 1
+  attackRate: 2
 --- !u!54 &5613184295811936234
 Rigidbody:
   m_ObjectHideFlags: 0
